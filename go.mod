@@ -1,4 +1,4 @@
-module gohub
+module github.com/zhangtaohua/gohub
 
 go 1.17
 
