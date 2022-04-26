@@ -2,7 +2,7 @@
 package user
 
 import (
-	"gohub/app/models"
+	"github.com/zhangtaohua/gohub/app/models"
 )
 
 // User 用户模型
