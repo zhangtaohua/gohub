@@ -37,7 +37,7 @@ func Logger() gin.HandlerFunc {
 		if c.Request.Body != nil {
 			// c.Request.Body 是一个 buffer 对象，只能读取一次
 			requestBody, _ = ioutil.ReadAll(c.Request.Body)
-			// 读取后，重新赋值 c.Request.Body ，以供后续的其他操作
+			// 读取后，重新赋值 c.Request.Body ，以供后续的其他操作 解决不可重复读body的问题
 			c.Request.Body = ioutil.NopCloser(bytes.NewBuffer(requestBody))
 		}
 
