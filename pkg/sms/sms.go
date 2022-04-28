@@ -40,3 +40,19 @@ func NewSMS() *SMS {
 func (sms *SMS) Send(phone string, message Message) bool {
 	return sms.Driver.Send(phone, message, config.GetStringMapString("sms.aliyun"))
 }
+
+// Tencent
+// did not Test if you use need testing!
+func NewSMSTenCent() *SMS {
+	once.Do(func() {
+		internalSMS = &SMS{
+			Driver: &Tencent{},
+		}
+	})
+
+	return internalSMS
+}
+
+func (sms *SMS) SendTencent(phone string, message Message) bool {
+	return sms.Driver.Send(phone, message, config.GetStringMapString("sms.tencent"))
+}
