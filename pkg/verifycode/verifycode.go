@@ -5,12 +5,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zhangtaohua/gohub//pkg/sms"
 	"github.com/zhangtaohua/gohub/pkg/app"
 	"github.com/zhangtaohua/gohub/pkg/config"
 	"github.com/zhangtaohua/gohub/pkg/helpers"
 	"github.com/zhangtaohua/gohub/pkg/logger"
 	"github.com/zhangtaohua/gohub/pkg/redis"
+	"github.com/zhangtaohua/gohub/pkg/sms"
 )
 
 type VerifyCode struct {
