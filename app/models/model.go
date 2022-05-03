@@ -3,6 +3,8 @@ package models
 
 import (
 	"time"
+
+	"github.com/spf13/cast"
 )
 
 // BaseModel 模型基类

@@ -6,6 +6,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gin-gonic/gin"
 	"github.com/zhangtaohua/gohub/pkg/app"
 	"github.com/zhangtaohua/gohub/pkg/config"
 	"github.com/zhangtaohua/gohub/pkg/logger"
