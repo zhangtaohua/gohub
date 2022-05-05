@@ -6,6 +6,7 @@ import (
 
 	"github.com/zhangtaohua/gohub/pkg/console"
 	"github.com/zhangtaohua/gohub/pkg/database"
+	"github.com/zhangtaohua/gohub/pkg/file"
 
 	"gorm.io/gorm"
 )
