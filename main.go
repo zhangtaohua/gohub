@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/zhangtaohua/gohub/app/cmd"
+	"github.com/zhangtaohua/gohub/app/cmd/make"
 	"github.com/zhangtaohua/gohub/bootstrap"
 	btsConig "github.com/zhangtaohua/gohub/config"
 	"github.com/zhangtaohua/gohub/pkg/config"
@@ -50,6 +51,8 @@ func main() {
 		cmd.CmdServe,
 		cmd.CmdKey,
 		cmd.CmdPlay,
+		make.CmdMake,
+		cmd.CmdTestCommand,
 	)
 
 	// 配置默认运行 Web 服务
