@@ -1,6 +1,7 @@
 package v1
 
 import (
+	"github.com/zhangtaohua/gohub/app/models/user"
 	"github.com/zhangtaohua/gohub/pkg/auth"
 	"github.com/zhangtaohua/gohub/pkg/response"
 
@@ -17,10 +18,11 @@ func (ctrl *UsersController) CurrentUser(c *gin.Context) {
 	response.Data(c, userModel)
 }
 
-// func (ctrl *UsersController) Index(c *gin.Context) {
-//     users := user.All()
-//     response.Data(c, users)
-// }
+// Index 所有用户
+func (ctrl *UsersController) Index(c *gin.Context) {
+	data := user.All()
+	response.Data(c, data)
+}
 
 // func (ctrl *UsersController) Show(c *gin.Context) {
 //     userModel := user.Get(c.Param("id"))
